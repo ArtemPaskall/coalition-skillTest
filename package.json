@@ -5,18 +5,11 @@
   "scripts": {
     "clean": "rimraf dist",
     "start": "npm run clean && parcel serve ./src/index.html",
-    "build": "npm run clean && parcel build ./src/index.html",
+    "build": "npm run clean && parcel build ./src/index.html --public-url ./",
     "deploy": "npm run build && gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://artempaskall.github.io/coalition-test-task/"
-  },
+ },
   "author": "Aileen Rae",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aileen-r/parcel-html-sass-js-starter-template/issues"
-  },
   "homepage": ".",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
