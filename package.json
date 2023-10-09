@@ -6,11 +6,11 @@
     "clean": "rimraf dist",
     "start": "npm run clean && parcel serve ./src/index.html",
     "build": "npm run clean && parcel build ./src/index.html --public-url ./",
-    "deploy": "npm run build && gh-pages -d dist --public-url ./"
+    "deploy": "npm run build && gh-pages -d dist"
  },
   "author": "Aileen Rae",
   "license": "MIT",
-  "homepage": ".",
+  "homepage": "https://artempaskall.github.io/coalition-test-task/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "gh-pages": "^6.0.0",
