@@ -10,7 +10,7 @@
  },
   "author": "Aileen Rae",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://artempaskall.github.io/coalition-skillTest/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "gh-pages": "^6.0.0",
