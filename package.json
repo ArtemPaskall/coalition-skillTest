@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/aileen-r/parcel-html-sass-js-starter-template/issues"
   },
-  "homepage": "https://github.com/ArtemPaskall/coalition-test-task",
+  "homepage": "https://artempaskall.github.io/coalition-test-task/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "gh-pages": "^6.0.0",
