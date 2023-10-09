@@ -1,0 +1,83 @@
+.history {
+  height: 130vh;
+  width: 100%;
+  background-image: url(../assets/history-section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+
+  &__header-wrapper {
+    padding-top: 65px;
+  }
+
+  &__header-number {
+    font-size: 154px;
+    color: $header-color-1;
+    opacity: 0.5;
+    line-height: 1;
+  }
+
+  &__header-title {
+    font-size: 44px;
+    color: $header-color-1;
+    position: relative;
+    top: -35px;
+    left: -35px;
+  }
+
+  &__paragraph {
+    font-family: 'Lato', sans-serif;
+    color: $text-color;
+    position: relative;
+    left: 80px;
+  }
+
+  &__carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: rgba(65, 79, 107, 0.7);
+  }
+
+  &__carousel-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+    }
+
+    img:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__carousel-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  &__carousel-nav-item {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 14px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

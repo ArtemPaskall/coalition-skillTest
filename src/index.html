@@ -4,20 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parcel HTML, SASS, and JavaScript Starter Template</title>
+    <title>Test Task Coalition</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./styles/main.scss" />
 
-    <link rel="stylesheet" href="./styles.scss" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;1,900&family=Oswald:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <include src="partials/main.html"></include>
+    <header class="header">
+      <div class="container">
+        <div class="header__top-menu">
+          <div class="header__logo">
+            <a href="#">
+              <img class="header__logo-img" src="./assets/logo.png" alt="Logo Los Angeles Mountains" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__list-item-link" href="#">01. HISTORY</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-item-link" href="#">02. TEAM</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sticky-nav">
+        <div class="container">
+          <div class="sticky-nav__menu">
+            <a class="sticky-nav__logo-link" href="#">
+              <img class="sticky-nav__logo-img" src="./assets/logo.png" alt="Logo Los Angeles Mountains" />
+              <div class="sticky-nav__name-wrapper">
+                <span class="sticky-nav__name-1row">LOSANGELES</span>
+                <span class="sticky-nav__name-2row">MOUNTAINS</span>
+              </div>
+            </a>
+            <nav class="sticky-nav__nav">
+              <ul class="sticky-nav__list">
+                <li class="sticky-nav__list-item">
+                  <a class="sticky-nav__list-item-link" href="#">01. HISTORY</a>
+                </li>
+                <li class="sticky-nav__list-item">
+                  <a class="sticky-nav__list-item-link" href="#">02. TEAM</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
-    <script type="module" src="./index.js"></script>
+      <section class="history">
+        <div class="container">
+          <div class="history__header-wrapper">
+            <span class="history__header-number">01.</span>
+            <span class="history__header-title">HISTORY</span>
+          </div>
+          <p class="history__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.  
+          </p>
+        </div>
+        <div class="history__carousel">
+          <div class="container">
+            <div class="history__carousel-wrapper">
+              <img src="./assets/gallery-img-2.png" alt="Los Angeles Mountains">
+              <img src="./assets/gallery-img-1.png" alt="Los Angeles Mountains">
+              <img src="./assets/gallery-img-2.png" alt="Los Angeles Mountains">
+              <img src="./assets/gallery-img-1.png" alt="Los Angeles Mountains">
+            </div>
+            <div class="history__carousel-nav">
+              <div class="history__carousel-nav-item"></div>
+              <div class="history__carousel-nav-item"></div>
+              <div class="history__carousel-nav-item"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

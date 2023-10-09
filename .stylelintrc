@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "scss/selector-no-empty": null
+  }
+}

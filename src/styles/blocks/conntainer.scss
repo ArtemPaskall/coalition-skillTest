@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 40px;
+
+  @include iPad {
+    padding: 0 20px;
+  }
+}
