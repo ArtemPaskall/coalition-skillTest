@@ -6,7 +6,7 @@
     "clean": "rimraf dist",
     "start": "npm run clean && parcel serve ./src/index.html",
     "build": "npm run clean && parcel build ./src/index.html --public-url ./",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist --public-url ./"
  },
   "author": "Aileen Rae",
   "license": "MIT",
