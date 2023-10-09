@@ -5,27 +5,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  font-family: 'Oswald', sans-serif;
   position: relative;
-
-  &__header-wrapper {
-    padding-top: 65px;
-  }
-
-  &__header-number {
-    font-size: 154px;
-    color: $header-color-1;
-    opacity: 0.5;
-    line-height: 1;
-  }
-
-  &__header-title {
-    font-size: 44px;
-    color: $header-color-1;
-    position: relative;
-    top: -35px;
-    left: -35px;
-  }
+  padding-top: 65px;
 
   &__paragraph {
     font-family: 'Lato', sans-serif;

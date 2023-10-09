@@ -1,0 +1,20 @@
+.section-header {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  display: inline;
+
+  &__number {
+    font-size: 154px;
+    color: $header-color-1;
+    opacity: 0.5;
+    line-height: 1;
+  }
+
+  &__title {
+    font-size: 44px;
+    color: $header-color-1;
+    position: relative;
+    top: -35px;
+    left: -35px;
+  }
+}
