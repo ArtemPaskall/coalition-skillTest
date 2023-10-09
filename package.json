@@ -6,6 +6,7 @@
     "clean": "rimraf dist",
     "start": "npm run clean && parcel serve ./src/index.html",
     "build": "npm run clean && parcel build ./src/index.html",
+    "deploy": "npm run build && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/aileen-r/parcel-html-sass-js-starter-template/issues"
   },
-  "homepage": "https://parcel-html-sass-js-starter-template.netlify.app",
+  "homepage": ".",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "gh-pages": "^6.0.0",
