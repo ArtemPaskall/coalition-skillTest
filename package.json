@@ -10,7 +10,7 @@
  },
   "author": "Aileen Rae",
   "license": "MIT",
-  "homepage": "https://artempaskall.github.io/coalition-test-task/",
+  "homepage": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "gh-pages": "^6.0.0",
