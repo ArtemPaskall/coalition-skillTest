@@ -1,0 +1,57 @@
+.footer {
+  background-color: $header-color-1;
+  color: #63769d;
+  padding: 10px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__logo-img {
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__name-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: relative;
+    top: 3px;
+  }
+
+  &__name-1row {
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 0.9;
+    color: #63769d;
+    font-size: 23px;
+  }
+
+  &__name-2row {
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 0.9;
+    color: #63769d;
+    font-size: 25px;
+  }
+
+  &__copyright {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #63769d;
+    font-size: 14px;
+    letter-spacing: 1.2;
+  }
+}

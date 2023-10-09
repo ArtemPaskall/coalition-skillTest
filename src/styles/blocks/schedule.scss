@@ -1,0 +1,25 @@
+.schedule {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 330px;
+  height: 220px;
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+
+  &__header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: $header-color-1;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+
+    &--extra-padding {
+      padding-bottom: 25px;
+    }
+  }
+}
