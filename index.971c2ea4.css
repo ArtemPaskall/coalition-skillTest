@@ -12,6 +12,10 @@ ol, ul {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -97,7 +101,11 @@ ol, ul {
 }
 
 .sticky-nav {
+  z-index: 1000;
+  background-color: #fff;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
 }
 
 .sticky-nav__menu {
@@ -211,18 +219,22 @@ ol, ul {
 }
 
 .history__carousel-wrapper {
+  width: 910px;
+  overflow: hidden;
+}
+
+.history__carousel-slider {
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  gap: 10px;
+  transition: all .9s;
   display: flex;
 }
 
-.history__carousel-wrapper img {
-  margin-right: 10px;
-}
-
-.history__carousel-wrapper img:last-child {
-  margin-right: 0;
+.history__carousel-slider img {
+  width: 220px;
+  height: 135px;
 }
 
 .history__carousel-nav {
@@ -236,13 +248,17 @@ ol, ul {
 .history__carousel-nav-item {
   width: 9px;
   height: 9px;
-  background-color: #fff;
+  background-color: #b0b4be;
   border-radius: 50%;
   margin-right: 14px;
 }
 
 .history__carousel-nav-item:last-child {
   margin-right: 0;
+}
+
+.history__carousel-nav-item--active {
+  background-color: #fff;
 }
 
 .section-header {
@@ -300,40 +316,77 @@ ol, ul {
   font-family: Oswald, sans-serif;
   font-size: 20px;
   text-decoration: none;
+  transition: all .3s;
   display: block;
 }
 
 .team__nav-list-item-link:after {
   content: "";
-  width: 100%;
+  width: 0;
   height: 1px;
   background-color: #b0b4be;
   border-radius: 5px;
   display: block;
 }
 
-.team__nav-list-item-link:hover {
+.team__nav-list-item-link:hover:after {
+  width: 100%;
+  animation: width-increase .3s ease-in-out;
+}
+
+.team__link-active {
   color: #414f6b;
   background-color: #b0b4be;
 }
 
-.team__nav-list-item-link:hover:after {
+.team__link-active:after {
+  content: "";
+  width: 100%;
+  height: 1px;
   background-color: #414f6b;
-  animation: hover-menu-link .5s ease-in-out;
+  border-radius: 5px;
+  display: block;
 }
 
-.team__tab1 {
+.team__link-active:hover:after {
+  width: 100%;
+  animation: hover-menu-link .3s ease-in-out;
+}
+
+.team__tab {
   height: 80vh;
-  background-image: url("mountain-tab1.16a219d2.png");
   background-position: bottom;
-  background-repeat: no-repeat;
+  background-repeat: no-repieat;
   background-size: cover;
+  display: none;
   position: relative;
 }
 
-.team__tab1-schedule {
+.team__tab-active {
+  display: block;
+}
+
+.team__tab--1 {
+  background-image: url("mountain-tab1.16a219d2.png");
+}
+
+.team__tab--2 {
+  background-image: url("mountain-tab2.58f37be3.png");
+}
+
+.team__tab-schedule {
   position: absolute;
   top: 100px;
+}
+
+@keyframes width-increase {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .schedule {
