@@ -519,21 +519,50 @@ html {
   font-weight: 400;
 }
 
+@media (max-width: 767.99px) {
+  .schedule {
+    width: 280px;
+    height: 160px;
+    position: relative;
+    top: 5%;
+    left: 10%;
+  }
+}
+
 .schedule__header {
   color: #414f6b;
   font-family: Oswald, sans-serif;
   font-size: 32px;
 }
 
+@media (max-width: 767.99px) {
+  .schedule__header {
+    font-size: 18px;
+  }
+}
+
 .schedule__date {
   justify-content: space-between;
   align-items: center;
   padding: 2px 0;
+  font-size: 16px;
   display: flex;
+}
+
+@media (max-width: 767.99px) {
+  .schedule__date {
+    font-size: 14px;
+  }
 }
 
 .schedule__date--extra-padding {
   padding-bottom: 25px;
+}
+
+@media (max-width: 767.99px) {
+  .schedule__date--extra-padding {
+    padding-bottom: 15px;
+  }
 }
 
 .footer {
@@ -616,6 +645,13 @@ html {
   cursor: pointer;
   background-color: #414f6b;
   margin-bottom: 10px;
+  display: none;
+}
+
+@media (max-width: 767.99px) {
+  .accordion {
+    display: block;
+  }
 }
 
 .accordion__wrapper {
