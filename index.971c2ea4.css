@@ -638,12 +638,23 @@ html {
 .accordion__img {
   width: 20px;
   height: 20px;
+  transition: all .3s;
 }
 
 .accordion__content {
-  height: 100vh;
-  background-image: url("mountain-tab1.16a219d2.png");
+  height: 80vh;
+  background-size: cover;
   display: none;
+}
+
+.accordion__content--1 {
+  background-image: url("mountain-tab1.16a219d2.png");
+  background-position: 75% 0;
+}
+
+.accordion__content--2 {
+  background-image: url("mountain-tab2.58f37be3.png");
+  background-position: 85% 0;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */
