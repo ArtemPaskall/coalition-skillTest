@@ -29,10 +29,15 @@
 
   &__nav {
     background-color: $header-color-1;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__nav-list {
     display: flex;
+    flex-direction: row;
     justify-content: left;
     align-items: center;
   }
@@ -100,6 +105,10 @@
 
     &--2 {
       background-image: url(../assets/mountain-tab2.png);
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 

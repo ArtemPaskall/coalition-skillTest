@@ -38,5 +38,22 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Accordion tabs toggle
+  const accordionOpenCloseBtn = document.querySelectorAll('.accordion__img');
+  [...accordionOpenCloseBtn].forEach((button, index) => {
+    button.addEventListener('click', function() {
+      const accordionContent = document.querySelectorAll('.accordion__content');
+      const accordion = document.querySelectorAll('.accordion');
+
+      if (button.style.transform === '') {
+        button.style.transform = 'rotate(0deg)'
+      }
+
+      accordionContent[index].style.display = accordionContent[index].style.display === 'block' ? 'none' : 'block';
+      button.style.transform = button.style.transform === 'rotate(0deg)' ? 'rotate(90deg)' : 'rotate(0deg)'
+      accordion[index].style.marginBottom = accordion[index].style.marginBottom === '0px' ? '10px' : '0';
+    });
+  });
 });
 

@@ -1,0 +1,44 @@
+.accordion {
+    background-color: #414f6b;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    display: block;
+    color: $link-color;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s;
+  }
+
+  &__content {
+    display: none;
+    height: 80vh;
+    background-size: cover;
+
+    &--1 {
+      background-image: url(../assets/mountain-tab1.png);
+      background-position: 75% 0;
+    }
+
+    &--2 {
+      background-image: url(../assets/mountain-tab2.png);
+      background-position: 85% 0;
+    }
+  }
+}
