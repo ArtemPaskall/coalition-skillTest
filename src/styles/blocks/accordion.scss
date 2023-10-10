@@ -2,6 +2,11 @@
     background-color: #414f6b;
     margin-bottom: 10px;
     cursor: pointer;
+    display: none;
+    
+    @include mobile {
+      display: block;
+    }
 
   &__wrapper {
     display: flex;
