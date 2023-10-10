@@ -411,7 +411,14 @@ html {
   background-color: #414f6b;
 }
 
+@media (max-width: 767.99px) {
+  .team__nav {
+    display: none;
+  }
+}
+
 .team__nav-list {
+  flex-direction: row;
   justify-content: left;
   align-items: center;
   display: flex;
@@ -482,6 +489,12 @@ html {
   background-image: url("mountain-tab2.58f37be3.png");
 }
 
+@media (max-width: 767.99px) {
+  .team__tab {
+    display: none;
+  }
+}
+
 .team__tab-schedule {
   position: absolute;
   top: 100px;
@@ -536,12 +549,24 @@ html {
   display: flex;
 }
 
+@media (max-width: 767.99px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
+
 .footer__logo-link {
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   display: flex;
+}
+
+@media (max-width: 767.99px) {
+  .footer__logo-link {
+    margin-bottom: 20px;
+  }
 }
 
 .footer__logo-img {
@@ -579,6 +604,46 @@ html {
   font-size: 14px;
   font-style: italic;
   font-weight: 900;
+}
+
+@media (max-width: 767.99px) {
+  .footer__copyright {
+    font-size: 12px;
+  }
+}
+
+.accordion {
+  cursor: pointer;
+  background-color: #414f6b;
+  margin-bottom: 10px;
+}
+
+.accordion__wrapper {
+  height: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.accordion__title {
+  color: #b0b4be;
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all .3s;
+  display: block;
+}
+
+.accordion__img {
+  width: 20px;
+  height: 20px;
+}
+
+.accordion__content {
+  height: 100vh;
+  background-image: url("mountain-tab1.16a219d2.png");
+  display: none;
 }
 
 /*# sourceMappingURL=index.971c2ea4.css.map */

@@ -42,6 +42,19 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    // Accordion tabs toggle
+    const accordionOpenCloseBtn = document.querySelectorAll('.accordion__img');
+    console.log(accordionOpenCloseBtn);
+    [
+        ...accordionOpenCloseBtn
+    ].forEach((button, index)=>{
+        button.addEventListener('click', function() {
+            accordionContent = document.querySelectorAll('.accordion__content');
+            accordionContent[index].style.display = accordionContent[index].style.display === 'block' ? 'none' : 'block';
+            if (button.style.transform === '') button.style.transform = 'rotate(0deg)';
+            button.style.transform = button.style.transform === 'rotate(0deg)' ? 'rotate(90deg)' : 'rotate(0deg)';
+        });
+    });
 });
 
 //# sourceMappingURL=index.09d9d7db.js.map
