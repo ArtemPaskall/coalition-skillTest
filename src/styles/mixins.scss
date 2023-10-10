@@ -1,11 +1,11 @@
 @mixin Desktop {
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
 
 @mixin iPad {
-  @media (max-width: 1279.99px) {
+  @media (max-width: 1199.99px) {
     @content;
   }
 }

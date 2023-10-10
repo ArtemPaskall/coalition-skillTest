@@ -1,5 +1,6 @@
 $fourImageCarousel: 4 * $carousel-img-width + 3 * $carousel-gap;
 $threeImageCarousel: 3 * $carousel-img-width + 2 * $carousel-gap;
+$oneImageCarousel: $carousel-img-width;
 
 .history {
   height: 130vh;
@@ -18,6 +19,7 @@ $threeImageCarousel: 3 * $carousel-img-width + 2 * $carousel-gap;
     color: $text-color;
     position: relative;
     left: 80px;
+    width: 90%;
   }
 
   &__carousel {
@@ -35,6 +37,15 @@ $threeImageCarousel: 3 * $carousel-img-width + 2 * $carousel-gap;
   &__carousel-wrapper {
     overflow: hidden;
     width: $fourImageCarousel;
+
+    @include iPad {
+      width: $threeImageCarousel;
+    }
+    @include mobile {
+      width: $oneImageCarousel;
+    }
+
+    
   }
 
   &__carousel-slider {
