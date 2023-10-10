@@ -3,6 +3,10 @@
   font-family: 'Oswald', sans-serif;
   display: inline;
 
+  @include mobile {
+    margin-bottom: 10px;
+  }
+
   &__number {
     font-size: 154px;
     color: $header-color-1;

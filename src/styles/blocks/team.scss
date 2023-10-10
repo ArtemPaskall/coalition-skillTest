@@ -6,6 +6,12 @@
     align-items: center;
     z-index: -1;
     padding: 20px 0 30px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__text {
@@ -14,6 +20,11 @@
     color: $text-color;
     position: relative;
     left: -40px;
+
+    @include mobile {
+      left: 0;
+      padding-left: 40px;
+    }
   }
 
   &__nav {
