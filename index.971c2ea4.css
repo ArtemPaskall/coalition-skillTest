@@ -22,7 +22,11 @@ html {
   padding: 0 40px;
 }
 
-@media (max-width: 1279.99px) {
+.container--offset-left {
+  padding: 0 20px;
+}
+
+@media (max-width: 1199.99px) {
   .container {
     padding: 0 20px;
   }
@@ -200,6 +204,7 @@ html {
 
 .history__paragraph {
   color: #15181b;
+  width: 90%;
   font-family: Lato, sans-serif;
   font-weight: 400;
   position: relative;
@@ -221,6 +226,18 @@ html {
 .history__carousel-wrapper {
   width: 910px;
   overflow: hidden;
+}
+
+@media (max-width: 1199.99px) {
+  .history__carousel-wrapper {
+    width: 680px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .history__carousel-wrapper {
+    width: 220px;
+  }
 }
 
 .history__carousel-slider {
