@@ -24,10 +24,10 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__list-item">
-                <a class="header__list-item-link" href="#">01. HISTORY</a>
+                <a class="header__list-item-link" href="#history">01. HISTORY</a>
               </li>
               <li class="header__list-item">
-                <a class="header__list-item-link" href="#">02. TEAM</a>
+                <a class="header__list-item-link" href="#team">02. TEAM</a>
               </li>
             </ul>
           </nav>
@@ -48,17 +48,17 @@
             <nav class="sticky-nav__nav">
               <ul class="sticky-nav__list">
                 <li class="sticky-nav__list-item">
-                  <a class="sticky-nav__list-item-link" href="#">01. HISTORY</a>
+                  <a class="sticky-nav__list-item-link" href="#history">01. HISTORY</a>
                 </li>
                 <li class="sticky-nav__list-item">
-                  <a class="sticky-nav__list-item-link" href="#">02. TEAM</a>
+                  <a class="sticky-nav__list-item-link" href="#team">02. TEAM</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
-      <section class="history">
+      <section id="history" class="history">
         <div class="container">
           <div class="section-header history__header">
             <span class="section-header__number">01.</span>
@@ -71,20 +71,24 @@
         <div class="history__carousel">
           <div class="container">
             <div class="history__carousel-wrapper">
-              <img src="./assets/gallery-img-2.png" alt="Los Angeles Mountains">
-              <img src="./assets/gallery-img-1.png" alt="Los Angeles Mountains">
-              <img src="./assets/gallery-img-2.png" alt="Los Angeles Mountains">
-              <img src="./assets/gallery-img-1.png" alt="Los Angeles Mountains">
-            </div>
-            <div class="history__carousel-nav">
-              <div class="history__carousel-nav-item"></div>
-              <div class="history__carousel-nav-item"></div>
-              <div class="history__carousel-nav-item"></div>
+              <div class="history__carousel-slider">
+                <img src="./assets/gallery-img-2.png" alt="Los Angeles Mountains">
+                <img src="./assets/gallery-img-1.png" alt="Los Angeles Mountains">
+                <img src="./assets/gallery-img-2.png" alt="Los Angeles Mountains">
+                <img src="./assets/gallery-img-1.png" alt="Los Angeles Mountains">
+                <img src="./assets/gallery-img-2.png" alt="Los Angeles Mountains">
+                <img src="./assets/gallery-img-1.png" alt="Los Angeles Mountains">
+              </div>
+              <div class="history__carousel-nav">
+                <div class="history__carousel-nav-item history__carousel-nav-item--active"></div>
+                <div class="history__carousel-nav-item"></div>
+                <div class="history__carousel-nav-item"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="team">
+      <section id="team" class="team">
         <div class="container">
           <div class="team__header-wrapper">
             <div class="section-header">
@@ -102,7 +106,7 @@
             <nav class="team__nav-wrapper">
               <ul class="team__nav-list">
                 <li class="team__nav-list-item">
-                  <a class="team__nav-list-item-link" href="#">MOUNTAIN 1</a>
+                  <a class="team__nav-list-item-link team__link-active" href="#">MOUNTAIN 1</a>
                 </li>
                 <li class="team__nav-list-item">
                   <a class="team__nav-list-item-link" href="#">MOUNTAIN 2</a>
@@ -111,9 +115,9 @@
             </nav>
           </div>
         </div>
-        <div class="team__tab1">
+        <div class="team__tab team__tab--1 team__tab-active">
           <div class="container">
-            <div class="schedule team__tab1-schedule">
+            <div class="schedule team__tab-schedule">
               <h3 class="schedule__header">SCHEDULE</h3>
               <div class="schedule__date">
                 <span>25 Nov 2016</span>
@@ -129,6 +133,29 @@
               </div>
               <div class="schedule__date">
                 <span>7  Jan 2017</span>
+                <span>Vestibulum viverra</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team__tab team__tab--2">
+          <div class="container">
+            <div class="schedule team__tab-schedule">
+              <h3 class="schedule__header">SCHEDULE</h3>
+              <div class="schedule__date schedule__date--extra-padding">
+                <span>17 Nov 2016</span>
+                <span>Vestibulum viverra</span>
+              </div>  
+              <div class="schedule__date">
+                <span>13 Dec 2016</span>
+                <span>Vestibulum viverra</span>
+              </div>
+              <div class="schedule__date schedule__date--extra-padding">
+                <span>28 Dec 2016</span>
+                <span>Vestibulum viverra</span>
+              </div>
+              <div class="schedule__date">
+                <span>9 Feb 2017</span>
                 <span>Vestibulum viverra</span>
               </div>
             </div>
@@ -152,5 +179,6 @@
         </div>
       </div>
     </footer>
+    <script type="" src="./scripts/script.js"></script>
   </body>
 </html>
