@@ -12,6 +12,10 @@ $oneImageCarousel: $carousel-img-width;
   position: relative;
   padding-top: 65px;
 
+  @include mobile {
+    padding-top: 20px;
+  }
+
   
   &__paragraph {
     font-family: 'Lato', sans-serif;
@@ -20,6 +24,11 @@ $oneImageCarousel: $carousel-img-width;
     position: relative;
     left: 80px;
     width: 90%;
+
+    @include mobile {
+      left: 35px;
+      width: 90%;
+    }
   }
 
   &__carousel {
@@ -44,8 +53,6 @@ $oneImageCarousel: $carousel-img-width;
     @include mobile {
       width: $oneImageCarousel;
     }
-
-    
   }
 
   &__carousel-slider {

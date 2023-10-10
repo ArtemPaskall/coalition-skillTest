@@ -8,6 +8,14 @@
     color: $header-color-1;
     opacity: 0.5;
     line-height: 1;
+
+    @include iPad {
+      font-size: 110px;
+    }
+
+    @include mobile {
+      font-size: 75px;
+    }
   }
 
   &__title {
@@ -16,5 +24,11 @@
     position: relative;
     top: -35px;
     left: -35px;
+
+    @include mobile {
+      font-size: 30px;
+      top: -16px;
+      left: -19px;
+    }
   }
 }

@@ -6,6 +6,10 @@
   background-size: cover;
   background-position: top;
 
+  @include mobile {
+    background-position: 40% top;
+  }
+
   &__top-menu {
     display: flex;
     flex-direction: row;
