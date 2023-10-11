@@ -94,6 +94,14 @@ $oneImageCarousel: $carousel-img-width;
     &--active {
       background-color: #fff;
     }
+
+    &--mobile {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
   }
 
 
