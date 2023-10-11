@@ -12,10 +12,13 @@ $oneImageCarousel: $carousel-img-width;
   position: relative;
   padding-top: 65px;
 
+  @include iPad {
+    padding-top: 35px;
+  }
+
   @include mobile {
     padding-top: 20px;
   }
-
   
   &__paragraph {
     font-family: 'Lato', sans-serif;
