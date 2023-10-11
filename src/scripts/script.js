@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
   // Tabs toggle
   const tabLinks = document.querySelectorAll('.team__nav-list-item-link');
-
   [...tabLinks].forEach((link, index) => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
@@ -18,10 +17,8 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-
   // Carousel slider
   const carouselNavButtons = document.querySelectorAll('.history__carousel-nav-item');
-
   [...carouselNavButtons].forEach((button, index) => {
     button.addEventListener('click', function() {
       const carouselSlider = document.querySelector('.history__carousel-slider');
