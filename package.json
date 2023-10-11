@@ -1,14 +1,14 @@
 {
-  "name": "parcel-html-sass-js-starter-template",
+  "name": "coalition-skillTest",
   "version": "0.1.0",
-  "description": "Starter template for building static web apps with HTML partials, SASS, and JavaScript.",
+  "description": " Coalition Technologies Frontend Skill Test by Artem Paskal.",
   "scripts": {
     "clean": "rimraf dist",
     "start": "npm run clean && parcel serve ./src/index.html",
     "build": "npm run clean && parcel build ./src/index.html --public-url ./",
     "deploy": "npm run build && gh-pages -d dist"
  },
-  "author": "Aileen Rae",
+  "author": "Artem Paskal",
   "license": "MIT",
   "homepage": "https://artempaskall.github.io/coalition-skillTest/",
   "devDependencies": {
