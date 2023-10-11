@@ -334,6 +334,16 @@ html {
   background-color: #fff;
 }
 
+.history__carousel-nav-item--mobile {
+  display: none;
+}
+
+@media (max-width: 767.99px) {
+  .history__carousel-nav-item--mobile {
+    display: block;
+  }
+}
+
 .section-header {
   font-family: Oswald, sans-serif;
   display: inline;
