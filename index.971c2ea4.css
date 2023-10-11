@@ -239,6 +239,12 @@ html {
   position: relative;
 }
 
+@media (max-width: 1199.99px) {
+  .history {
+    padding-top: 35px;
+  }
+}
+
 @media (max-width: 767.99px) {
   .history {
     padding-top: 20px;
@@ -365,6 +371,14 @@ html {
   position: relative;
   top: -35px;
   left: -35px;
+}
+
+@media (max-width: 1199.99px) {
+  .section-header__title {
+    font-size: 28px;
+    top: -24px;
+    left: -26px;
+  }
 }
 
 @media (max-width: 767.99px) {
@@ -519,6 +533,15 @@ html {
   font-weight: 400;
 }
 
+@media (max-width: 1199.99px) {
+  .schedule {
+    width: 340px;
+    height: 180px;
+    padding: 10px 30px;
+    top: 20%;
+  }
+}
+
 @media (max-width: 767.99px) {
   .schedule {
     width: 280px;
@@ -535,6 +558,12 @@ html {
   font-size: 32px;
 }
 
+@media (max-width: 1199.99px) {
+  .schedule__header {
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 767.99px) {
   .schedule__header {
     font-size: 18px;
@@ -549,6 +578,12 @@ html {
   display: flex;
 }
 
+@media (max-width: 1199.99px) {
+  .schedule__date {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 767.99px) {
   .schedule__date {
     font-size: 14px;
@@ -557,6 +592,12 @@ html {
 
 .schedule__date--extra-padding {
   padding-bottom: 25px;
+}
+
+@media (max-width: 1199.99px) {
+  .schedule__date--extra-padding {
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: 767.99px) {
